@@ -99,7 +99,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh
 
 - 【全新安装】请执行以下脚本：
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/sinian-liu/3x-ui/master/install.sh)
 ```
 #### 如果执行了上面的代码但是报错，证明你的系统里面没有curl这个软件，请执行以下命令先安装curl软件，安装curl之后再去执行上面代码，
 ```
@@ -118,7 +118,7 @@ apt update -y&&apt install -y curl&&apt install -y socat
 若要安装指定的版本，请使用以下安装命令。 e.g., ver `v2.4.5`:
 
 ```
-VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/xeefei/3x-ui/$VERSION/install.sh") $VERSION
+VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/sinian-liu/3x-ui/$VERSION/install.sh") $VERSION
 ```
 ------------
 ## 若你的VPS默认有防火墙，请在安装完成之后放行指定端口
@@ -323,7 +323,7 @@ case "${ARCH}" in
 esac
 
 
-wget https://github.com/xeefei/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
+wget https://github.com/sinian-liu/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
 ```
 
 2. 下载压缩包后，执行以下命令安装或升级 x-ui：
@@ -374,7 +374,7 @@ systemctl restart x-ui
 2. **克隆项目仓库**
 
    ```sh
-   git clone https://github.com/xeefei/3x-ui.git
+   git clone https://github.com/sinian-liu/3x-ui.git
    cd 3x-ui
    ```
 
@@ -731,24 +731,5 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 ![7](./media/7.png)
 
 ------------
-## 广告赞助
-- 如果你觉得本项目对你有用，而且你也恰巧有这方面的需求，你也可以选择通过我的购买链接赞助我。
-- [搬瓦工GIA高端线路，仅推荐购买GIA套餐](https://bandwagonhost.com/aff.php?aff=75015)
-- [Dmit高端GIA线路](https://www.dmit.io/aff.php?aff=9326)
-- [白丝云【4837线路】实惠量大管饱](https://cloudsilk.io/aff.php?aff=706)
 
 ------------
-## 特别感谢
-
-- [alireza0](https://github.com/alireza0/)
-
-------------
-## 致谢
-
-- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (License: **GPL-3.0**): _Enhanced v2ray/xray and v2ray/xray-clients routing rules with built-in Iranian domains and a focus on security and adblocking._
-- [Vietnam Adblock rules](https://github.com/vuong2023/vn-v2ray-rules) (License: **GPL-3.0**): _A hosted domain hosted in Vietnam and blocklist with the most efficiency for Vietnamese._
-
-------------
-## Star 趋势
-
-[![Stargazers over time](https://starchart.cc/xeefei/3x-ui.svg)](https://starchart.cc/xeefei/3x-ui)
