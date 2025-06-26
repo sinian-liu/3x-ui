@@ -20,11 +20,6 @@
   </a>
 </p>
 
-- 赞助地址（USDT/TRC20）：`TYQEmQp1P65u9bG7KPehgJdvuokfb72YkZ`
-
-## [【3X-UI】中文交流群：https://t.me/XUI_CN](https://t.me/XUI_CN)
-## [【3X-UI】详细安装流程步骤：https://xeefei.github.io/xufei/2024/05/3x-ui/](https://xeefei.github.io/xufei/2024/05/3x-ui/)
-
 ------------
 ## ✰〔3X-UI优化版〕跟原版3X-UI的区别？✰
 ### 大部分功能基于原版3X-UI进行汉化优化，主要的优化内容如下：
