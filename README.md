@@ -1,13 +1,12 @@
 <p align="center"><a href="#"><img src="./media/3X-UI.png" alt="Image"></a></p>
 
-**---------------------------------------一个更好的面板 • 基于Xray Core构建------------------------------**
+**------------------一个更好的面板 • 基于Xray Core构建----------------**
 
-
-[![](https://img.shields.io/github/v/release/xeefei/3x-ui.svg?style=for-the-badge)](https://github.com/xeefei/3x-ui/releases)
-[![](https://img.shields.io/github/actions/workflow/status/xeefei/3x-ui/release.yml.svg?style=for-the-badge)](https://github.com/xeefei/3x-ui/actions)
-[![GO Version](https://img.shields.io/github/go-mod/go-version/xeefei/3x-ui.svg?style=for-the-badge)](#)
-[![Downloads](https://img.shields.io/github/downloads/xeefei/3x-ui/total.svg?style=for-the-badge)](https://github.com/xeefei/3x-ui/releases/latest)
-[![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true&style=for-the-badge)](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[![](https://img.shields.io/github/v/release/xeefei/3x-ui.svg)](https://github.com/xeefei/3x-ui/releases)
+[![](https://img.shields.io/github/actions/workflow/status/xeefei/3x-ui/release.yml.svg)](#)
+[![GO Version](https://img.shields.io/github/go-mod/go-version/xeefei/3x-ui.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/xeefei/3x-ui/total.svg)](#)
+[![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 > **声明：** 此项目仅供个人学习、交流使用，请遵守当地法律法规，勿用于非法用途；请勿用于生产环境。
 
@@ -20,11 +19,6 @@
     <img src="./media/buymeacoffe.png" alt="Image">
   </a>
 </p>
-
-- 赞助地址（USDT/TRC20）：`TYQEmQp1P65u9bG7KPehgJdvuokfb72YkZ`
-
-## [【3X-UI】中文交流群：https://t.me/XUI_CN](https://t.me/XUI_CN)
-## [【3X-UI】详细安装流程步骤：https://xeefei.github.io/xufei/2024/05/3x-ui/](https://xeefei.github.io/xufei/2024/05/3x-ui/)
 
 ------------
 ## ✰〔3X-UI优化版〕跟原版3X-UI的区别？✰
@@ -47,7 +41,7 @@
 ## ✰如何从其他x-ui版本迁移到〔3X-UI优化版〕？✰
 #### 1、若你用的是伊朗老哥的原版3X-UI，是可以直接〔覆盖安装〕的，因为〔3X-UI优化版〕是fork了原版3X-UI的项目，基于原有的功能进行优化的，大功能是没有变化的，主要是进行了脚本的〔汉化处理〕，其他诸如数据库文件等位置是没有改变的，所以直接覆盖安装，并不会影响你〔原有节点及配置〕等数据；安装命令如下：
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/sinian-liu/3x-ui/master/install.sh)
 ```
 #### 2、若你之前用的是Docker方式安装，那先进入容器里面/命令：docker exec -it 容器id /bin/sh，再执行以上脚本命令直接【覆盖安装】即可，
 #### 3、若你用的是之前F佬的x-ui或者其他分支版本，那直接覆盖安装的话，并不能确保一定就能够兼容？建议你先去备份〔数据库〕配置文件，再进行安装〔3X-UI优化版〕。
@@ -100,7 +94,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh
 
 - 【全新安装】请执行以下脚本：
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/xeefei/3x-ui/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/sinian-liu/3x-ui/master/install.sh)
 ```
 #### 如果执行了上面的代码但是报错，证明你的系统里面没有curl这个软件，请执行以下命令先安装curl软件，安装curl之后再去执行上面代码，
 ```
@@ -119,7 +113,7 @@ apt update -y&&apt install -y curl&&apt install -y socat
 若要安装指定的版本，请使用以下安装命令。 e.g., ver `v2.4.5`:
 
 ```
-VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/xeefei/3x-ui/$VERSION/install.sh") $VERSION
+VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/sinian-liu/3x-ui/$VERSION/install.sh") $VERSION
 ```
 ------------
 ## 若你的VPS默认有防火墙，请在安装完成之后放行指定端口
@@ -132,14 +126,13 @@ VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/xeefei/3x-u
 #### PS：若你的VPS没有防火墙，则所有端口都是能够ping通的，可自行选择是否进入脚本安装防火墙保证安全，但安装了防火墙必须放行相应端口。
 
 ------------
-## 安装证书开启https方式实现域名登录访问管理面板/----->>偷自己
+## 安装证书开启https方式实现域名登录访问管理面板/偷自己
 #### PS：如果不需要以上功能或无域名，可以跳过这步，
 ##### 1、把自己的域名托管到CF，并解析到自己VPS的IP，不要开启【小云朵】，
 ##### 2、如果要申请安装证书并每3个月【自动续签】证书，请确保80和443端口是放行打开的，
 ##### 3、输入x-ui命令进入面板管理脚本，通过选择第【18】选项去进行安装，
-##### 4、在安装证书的最后一步，请输入【Y】设置面板证书路径，如下图所示：
-![27](./media/27.png)
-##### 5、进入后台【面板设置】—–>【常规】中，会看到脚本已经自动填好了证书公钥、私钥路径，
+##### 4、记录好已经安装证书的【路径】，位置在：/root/.acme.sh/（域名）_ecc，后续需要用到，
+##### 5、进入后台【面板设置】—–>【常规】中，去分别填入刚才已经记录的证书公钥、私钥路径，
 ##### 6、点击左上角的【保存】和【重启面板】，即可用自己域名进行登录管理；也可按照后续方法实现【自己偷自己】。
 
 ------------
@@ -178,7 +171,7 @@ VERSION=v2.4.5 && bash <(curl -Ls "https://raw.githubusercontent.com/xeefei/3x-u
 ![12](./media/12.png)
 ##### PS：把之前通过自动备份下载得到的两个文件上传覆盖掉旧文件，重启3x-ui面板即可【迁移成功】；即使迁移过程中出现问题，你是有备份文件的，不用担心，多试几次。
 ![13](./media/13.png)
-#### 五、若安装了证书，去核对/更改一下证书的路径，一般是同一个域名的话，位置在：/root/cert/域名/fullchain.pem，路径是相同的就不用更改，
+#### 五、若安装了证书，去核对/更改一下证书的路径，一般是同一个域名的话，位置在：/root/.acme.sh/（域名）_ecc，路径是相同的就不用更改，
 #### 六、重启面板/重启服务器，让上述步骤生效即可，这时可以看到所有配置都是之前自己常用的，包括面板用户名、密码，入站、客户端，电报机器人配置等。
 
 ------------
@@ -325,7 +318,7 @@ case "${ARCH}" in
 esac
 
 
-wget https://github.com/xeefei/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
+wget https://github.com/sinian-liu/3x-ui/releases/latest/download/x-ui-linux-${XUI_ARCH}.tar.gz
 ```
 
 2. 下载压缩包后，执行以下命令安装或升级 x-ui：
@@ -376,7 +369,7 @@ systemctl restart x-ui
 2. **克隆项目仓库**
 
    ```sh
-   git clone https://github.com/xeefei/3x-ui.git
+   git clone https://github.com/sinian-liu/3x-ui.git
    cd 3x-ui
    ```
 
@@ -733,24 +726,5 @@ XUI_BIN_FOLDER="bin" XUI_DB_FOLDER="/etc/x-ui" go build main.go
 ![7](./media/7.png)
 
 ------------
-## 广告赞助
-- 如果你觉得本项目对你有用，而且你也恰巧有这方面的需求，你也可以选择通过我的购买链接赞助我。
-- [搬瓦工GIA高端线路，仅推荐购买GIA套餐](https://bandwagonhost.com/aff.php?aff=75015)
-- [Dmit高端GIA线路](https://www.dmit.io/aff.php?aff=9326)
-- [白丝云【4837线路】实惠量大管饱](https://cloudsilk.io/aff.php?aff=706)
 
 ------------
-## 特别感谢
-
-- [alireza0](https://github.com/alireza0/)
-
-------------
-## 致谢
-
-- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (License: **GPL-3.0**): _Enhanced v2ray/xray and v2ray/xray-clients routing rules with built-in Iranian domains and a focus on security and adblocking._
-- [Vietnam Adblock rules](https://github.com/vuong2023/vn-v2ray-rules) (License: **GPL-3.0**): _A hosted domain hosted in Vietnam and blocklist with the most efficiency for Vietnamese._
-
-------------
-## Star 趋势
-
-[![Stargazers over time](https://starchart.cc/xeefei/3x-ui.svg)](https://starchart.cc/xeefei/3x-ui)
