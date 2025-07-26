@@ -2,10 +2,10 @@
 
 **------------------一个更好的面板 • 基于Xray Core构建----------------**
 
-[![](https://img.shields.io/github/v/release/xeefei/3x-ui.svg)](https://github.com/xeefei/3x-ui/releases)
-[![](https://img.shields.io/github/actions/workflow/status/xeefei/3x-ui/release.yml.svg)](#)
+[![](https://img.shields.io/github/v/release/xeefei/3x-ui.svg)](https://github.com/sinian-liu/3x-ui/releases)
+[![](https://img.shields.io/github/actions/workflow/status/sinian-liu/3x-ui/release.yml.svg)](#)
 [![GO Version](https://img.shields.io/github/go-mod/go-version/xeefei/3x-ui.svg)](#)
-[![Downloads](https://img.shields.io/github/downloads/xeefei/3x-ui/total.svg)](#)
+[![Downloads](https://img.shields.io/github/downloads/sinian-liu/3x-ui/total.svg)](#)
 [![License](https://img.shields.io/badge/license-GPL%20V3-blue.svg?longCache=true)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 > **声明：** 此项目仅供个人学习、交流使用，请遵守当地法律法规，勿用于非法用途；请勿用于生产环境。
@@ -15,7 +15,7 @@
 **如果此项目对你有用，请给一个**:star2:
 
 <p align="left">
-  <a href="https://buymeacoffee.com/xeefeiz" target="_blank">
+  <a href="https://buymeacoffee.com/sinian-liu" target="_blank">
     <img src="./media/buymeacoffe.png" alt="Image">
   </a>
 </p>
