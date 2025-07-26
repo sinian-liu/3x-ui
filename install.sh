@@ -365,10 +365,10 @@ echo -e "若您已经忘记账号/密码，请用脚本选项〔6〕重新设置
 echo -e "--------------------------------------------------"
 if [[ -n $ipv4 ]]; then
     echo -e "面板 IPv4 访问地址------>> ${green}http://$ipv4:5321/a/${plain}"
-    echo -e "------------------------>> 账号: ${green}sinian${plain}"
-    echo -e "------------------------>> 密码: ${green}sinian${plain}"
-    echo -e "------------------------>> 端口号: ${green}5321${plain}"
-    echo -e "------------------------>> 访问路径: ${green}/a/${plain}"
+    echo -e "---------------------->> ${yellow}账号: ${green}sinian${plain}"
+    echo -e "---------------------->> ${yellow}密码: ${green}sinian${plain}"
+    echo -e "---------------------->> ${yellow}端口号: ${green}5321${plain}"
+    echo -e "---------------------->> ${yellow}访问路径: ${green}/a/${plain}"
     echo -e "------>> 若您忘记了上述面板信息，后期可通过x-ui命令进入脚本输入数字〔10〕选项获取"
 fi
 if [[ -n $ipv6 ]]; then
