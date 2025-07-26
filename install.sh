@@ -348,47 +348,44 @@ install_x-ui() {
     sleep 3
     echo -e ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
     echo ""
-    echo -e "${yellow}----->>>3X-UI面板和Xray启动成功<<<-----${plain}"
+echo -e "${yellow}----->>>3X-UI面板和Xray启动成功<<<-----${plain}"
 }
 install_base
 install_x-ui $1
 echo ""
 echo -e "----------------------------------------------"
-sleep 4
-info=$(/usr/local/x-ui/x-ui setting -show true)
-echo -e "${info}${plain}"
-echo ""
-echo -e "若您忘记了上述面板信息，后期可通过x-ui命令进入脚本${red}输入数字〔10〕选项获取${plain}"
-    # if [[ -n $ipv4 ]]; then
-    #    echo -e "${yellow}面板 IPv4 访问地址为：${green}http://$ipv4:${config_port}/${config_webBasePath}${plain}"
-    # fi
-    # if [[ -n $ipv6 ]]; then
-    #    echo -e "${yellow}面板 IPv6 访问地址为：${green}http://[$ipv6]:${config_port}/${config_webBasePath}${plain}"
-    # fi
-    #    echo -e "请自行确保此端口没有被其他程序占用，${yellow}并且确保${red} ${config_port} ${yellow}端口已放行${plain}"
-echo -e "账号${red}sinian${plain}"
-echo -e "密码${red}sinian${plain}"
-echo -e "端口号${red}5321${plain}"
-echo -e "访问路径${red}/a/${plain}"
-    # if [[ -n $ipv4 ]]; then
-    #    echo -e "${yellow}面板 IPv4 访问地址为：${green}http://$ipv4:${config_port}/${config_webBasePath}${plain}"
-    # fi
-    # if [[ -n $ipv6 ]]; then
-    #    echo -e "${yellow}面板 IPv6 访问地址为：${green}http://[$ipv6]:${config_port}/${config_webBasePath}${plain}"
-    # fi
-echo ""
-echo -e "----------------------------------------------"
-echo ""
-sleep 2
 echo -e "${green}安装/更新完成${plain}"
+echo -e "面板配置信息："
+echo -e "------>> 警告：面板未安装证书进行SSL保护"
+echo -e "------>> 为非默认admin账号/密码，请牢记"
+echo -e "port（端口号）: ${red}5321${plain}"
+echo -e "webBasePath（访问路径）: ${red}/a/${plain}"
+echo -e "PS：为安全起见，不显示账号和密码"
+echo -e "若您已经忘记账号/密码，请用脚本选项〔6〕重新设置"
+echo -e "--------------------------------------------------"
+if [[ -n $ipv4 ]]; then
+    echo -e "面板 IPv4 访问地址------>> ${green}http://$ipv4:5321/a/${plain}"
+    echo -e "----------------------->> 账号: ${red}sinian${plain}"
+    echo -e "----------------------->> 密码: ${red}sinian${plain}"
+    echo -e "----------------------->> 端口号: ${red}5321${plain}"
+    echo -e "----------------------->> 访问路径: ${red}/a/${plain}"
+    echo -e "------>> 若您忘记了上述面板信息，后期可通过x-ui命令进入脚本输入数字〔10〕选项获取"
+fi
+if [[ -n $ipv6 ]]; then
+    echo -e "面板 IPv6 访问地址------>> ${green}http://[$ipv6]:5321/a/${plain}"
+fi
+echo -e ">>>>>>>>注：若您安装了〔证书〕，请把IP换成您的域名用https方式登录"
+echo -e "--------------------------------------------------"
+echo -e "请确保 ${red}5321${plain} 端口已打开放行"
+echo -e "请自行确保此端口没有被其他程序占用"
+echo -e "若要登录访问面板，请复制上面的地址到浏览器"
+echo -e "--------------------------------------------------"
 echo -e "${yellow}服务器推荐：https://my.frantech.ca/aff.php?aff=4337${plain}"
 echo -e "${yellow}VPS评测官方网站：${red} https://www.1373737.xyz/${plain}"
-echo ""
 echo -e "----------------------------------------------"
-echo ""
-echo -e "${green}〔3X-UI〕优化版项目地址：${yellow}https://github.com/sinian-liu/3x-ui${plain}" 
-echo ""
-echo -e "${green} 服务器购买：${yellow}https://www.1373737.xyz/${plain}"
-echo ""
+echo -e "${green}〔3X-UI〕优化版项目地址：${yellow}https://github.com/sinian-liu/3x-ui${plain}"
+echo -e "${green}服务器购买：${yellow}https://www.1373737.xyz/${plain}"
 echo -e "----------------------------------------------"
-echo ""
+echo -e "${green}3X-UI 搭建完成！${plain}"
+echo -e "请访问服务器 IP 的 ${red}5321${plain} 端口进行管理"
+echo -e "----------------------------------------------"
