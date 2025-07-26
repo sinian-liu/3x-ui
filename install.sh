@@ -370,6 +370,12 @@ echo -e "账号${red}sinian${plain}"
 echo -e "密码${red}sinian${plain}"
 echo -e "端口号${red}5321${plain}"
 echo -e "访问路径${red}/a/${plain}"
+    # if [[ -n $ipv4 ]]; then
+    #    echo -e "${yellow}面板 IPv4 访问地址为：${green}http://$ipv4:${config_port}/${config_webBasePath}${plain}"
+    # fi
+    # if [[ -n $ipv6 ]]; then
+    #    echo -e "${yellow}面板 IPv6 访问地址为：${green}http://[$ipv6]:${config_port}/${config_webBasePath}${plain}"
+    # fi
 echo ""
 echo -e "----------------------------------------------"
 echo ""
