@@ -359,6 +359,17 @@ info=$(/usr/local/x-ui/x-ui setting -show true)
 echo -e "${info}${plain}"
 echo ""
 echo -e "若您忘记了上述面板信息，后期可通过x-ui命令进入脚本${red}输入数字〔10〕选项获取${plain}"
+    # if [[ -n $ipv4 ]]; then
+    #    echo -e "${yellow}面板 IPv4 访问地址为：${green}http://$ipv4:${config_port}/${config_webBasePath}${plain}"
+    # fi
+    # if [[ -n $ipv6 ]]; then
+    #    echo -e "${yellow}面板 IPv6 访问地址为：${green}http://[$ipv6]:${config_port}/${config_webBasePath}${plain}"
+    # fi
+    #    echo -e "请自行确保此端口没有被其他程序占用，${yellow}并且确保${red} ${config_port} ${yellow}端口已放行${plain}"
+echo -e "账号${red}sinian${plain}"
+echo -e "密码${red}sinian${plain}"
+echo -e "端口号${red}5321${plain}"
+echo -e "访问路径${red}/a/${plain}"
 echo ""
 echo -e "----------------------------------------------"
 echo ""
